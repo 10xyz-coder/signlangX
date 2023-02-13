@@ -1,0 +1,60 @@
+ 
+<html>
+  <head>
+    <title>Sign language</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body id="body">
+  <div class="container">
+  
+    <center>
+      <h3 class="ui blue block header"> Sign language </h3>
+      <span>✋</span>
+      <span>👍</span>
+      <span>👎</span>
+      <span>🤘</span>
+      <span>🙏</span>
+      <span>🙌</span>
+
+      <br><br>
+
+      <div id="flexy">
+        <div id="gridX">
+        <div id="camera"><label>Webcam View</label> <div id="cam"></div></div>
+        <div id="result"><label>Result</label> <div id="res"></div></div>
+      </div>
+      <br>
+      <button onclick="take_snapshot();" id="snap" class="ui blue button"> Capture Image</button>
+      <button onclick="check();" id="checkbtn" class="ui green disabled button"> Identify Image</button>
+        <br><br>
+        <p id="ress"></p>
+
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
